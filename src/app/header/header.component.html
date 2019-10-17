@@ -1,0 +1,20 @@
+<div class="ereHead">
+  <!--my toggle botton-->
+  <div class="a">
+    <h3>Ereyomi</h3>
+    <button type="button" name="button" class="ereBtn" (click)="toggleMenu()">
+      &#9776;
+    </button>
+  </div>
+
+  <!--my menu-->
+  <nav class="ereMenu" [ngClass]="{ ShowMenu: toggle }">
+    <ul class="myMenu">
+      <li class="links" routerLinkActive="active"><a [routerLink]="['/recipes']">Recipes</a></li>
+      <li class="links" routerLinkActive="active"><a [routerLink]="['/shopping-list']">shop list</a></li>
+      <li class="links manage">
+        <a href="#">manage</a>
+      </li>
+    </ul>
+  </nav>
+</div>

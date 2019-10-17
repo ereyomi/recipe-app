@@ -1,0 +1,136 @@
+.ereHead {
+  top: 0;
+  position: relative;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.ereHead .a {
+  width: 100%;
+}
+
+.ereMenu {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0px;
+  background: #ff1a1a;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.ShowMenu {
+  height: 200px;
+}
+
+.ereMenu li {
+  display: flex;
+  justify-content: center;
+}
+
+.ereMenu li a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 10px 30px;
+  color: white;
+}
+
+.ereMenu a:hover {
+  background: white;
+  color: #cc0000;
+}
+
+.ereHead .a h3 {
+  float: left;
+  color: white;
+  background: #cc0000;
+  padding: 3px 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 5px 10px;
+  border: 2px solid #cc0000;
+}
+
+
+.ereBtn {
+  float: right;
+  padding: 5px 10px;
+  border: none;
+  background: #cc0000;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.ereBtn:hover {
+  color: white;
+  background: #cc0000;
+}
+
+@media screen and (min-width: 350px) {
+  .ereHead .a h3 {
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 8px 15px;
+  }
+
+  .ereBtn {
+    padding: 8px 15px;
+    font-size: 20px;
+    margin: 6px 10px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .ereBtn {
+    display: none;
+  }
+  .ereHead {
+    flex-direction: row;
+  }
+
+  .ereHead .a {
+    width: 20%;
+  }
+
+  .ereMenu {
+    background: none;
+    width: 80%;
+    height: auto;
+  }
+
+  .ereMenu ul {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .ereHead .ereMenu ul li {
+    display: inline-flex;
+  }
+
+  .ereMenu li a {
+    padding: 20px 10px;
+    color: #cc0000;
+  }
+
+  .ereMenu li a:hover {
+    color: #ffb3b3;
+  }
+
+  .ereMenu .manage a {
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: white;
+    background: #cc0000;
+  }
+
+  .ereMenu .manage a:hover {
+    background: #ffb3b3;
+    color: #cc0000;
+  }
+}

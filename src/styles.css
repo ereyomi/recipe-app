@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  box-sizing: border-box !important;
+}
+
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  /* color: rgba(255, 255, 255, 0.5); */
+  width: 100% !important;
+  height: auto;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+div {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+input,
+button,
+.btn,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.ere-flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ere-justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ere-justify-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ere-justify-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+active {
+  color: grey !important;
+}
